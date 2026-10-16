@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .signup-container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* SIGN UP TITLE */
+        .signup-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 45px;
+        }
+
+        /* MAIN BOX */
+        .signup-box {
+            width: 600px;
+            height: 420px;
+            border: 2px solid white;
+            border-radius: 50px;
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* LEFT SIDE */
+        .left-side {
+            width: 225px;
+            padding: 115px 22px 20px 22px;
+            border-right: 2px solid white;
+            border-radius: 50px 0 0 50px;
+        }
+
+        .left-side h1 {
+            font-size: 35px;
+            margin: 0 0 25px 0;
+        }
+
+        .left-side p {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 18px;
+            margin: 0;
+        }
+
+        /* RIGHT SIDE */
+        .form-side {
+            width: 375px;
+            padding: 20px 35px;
+        }
+
+        .form-group {
+            margin-bottom: 14px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        input {
+            width: 280px;
+            height: 36px;
+            border: none;
+            outline: none;
+            background-color: white;
+            padding: 5px 8px;
+            font-size: 15px;
+        }
+
+        /* FIRST NAME + LAST NAME */
+        .name-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .name-group input {
+            width: 130px;
+        }
+
+        /* SIGN UP BUTTON */
+        .signup-button {
+            display: block;
+            width: 140px;
+            height: 36px;
+            margin: 20px auto 0;
+            border: none;
+            background-color: white;
+            color: #111;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .signup-button:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="signup-container">
+
+        <div class="signup-title">
+            SIGN UP
+        </div>
+
+        <div class="signup-box">
+
+            <!-- LEFT SIDE -->
+            <div class="left-side">
+
+                <h1>Heading</h1>
+
+                <p>
+                    Library<br>
+                    ---------,<br>
+                    ----------<br>
+                    ---------------<br>
+                    ----------------
+                </p>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="form-side">
+
+                <form>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="name-row">
+
+                        <div class="form-group name-group">
+                            <label>First Name</label>
+                            <input type="text" required>
+                        </div>
+
+                        <div class="form-group name-group">
+                            <label>Last Name</label>
+                            <input type="text" required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" required>
+                    </div>
+
+                    <button class="signup-button" type="submit">
+                        SIGN UP
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Community Health Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <div class="logo"><a href="home.html"><img src="logo.jpg" alt="Logo"></a> </div>
+            <div>
+                <h1>Community Health Center</h1>
+                <p>Caring for Your Health</p>
+            </div>
+        </div>
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="doctors.html">DOCTORS</a>
+            <a href="appointment.html" class="active">APPOINTMENT</a>
+            <a href="supply.html">SUPPLY</a>
+            <a href="healthcenter.html">LOGOUT</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-wide">
+            <div class="card appointment-card">
+                <h2>Book an Appointment</h2>
+                
+                <form class="appointment-form-wide">
+                    <div class="form-left">
+                        <input type="text" placeholder="Full Name">
+                        <input type="email" placeholder="Email">
+                        
+                        <div class="services-box">
+                            <p>Select Services:</p>
+                            <label><input type="checkbox"> General Check-up</label>
+                            <label><input type="checkbox"> Vaccination</label>
+                            <label><input type="checkbox"> Maternal Care</label>
+                            <label><input type="checkbox"> Dental Care</label>
+                            <label><input type="checkbox"> Emergency Treatment</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-right">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    
+                    <div class="form-buttons-bottom">
+                        <button type="submit" class="btn-submit">Submit</button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Community Health Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>
